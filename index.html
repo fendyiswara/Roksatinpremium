@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rok Satin Premium - Tampil Anggun & Mewah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff9fa;
+            color: #555;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .rose-bg {
+            background-color: #fff0f3;
+        }
+        
+        .promo-banner {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        }
+        
+        .countdown-box {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
+        }
+        
+        .product-shadow {
+            box-shadow: 0 10px 30px rgba(249, 168, 188, 0.2);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .color-option {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .color-option:hover, .color-option.active {
+            border-color: #ff6b8b;
+            transform: scale(1.05);
+        }
+        
+        .promo-price {
+            position: relative;
+        }
+        
+        .promo-price::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background: #ff6b8b;
+            transform: rotate(-5deg);
+        }
+    </style>
+</head>
+<body class="rose-bg">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-rose-600 title-font">Rok Satin</div>
+            <div class="md:hidden">
+                <button class="text-rose-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Product Image -->
+    <section class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto overflow-hidden rounded-lg product-shadow">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk2-m9tfsce3afwb42.webp" alt="Rok Satin Premium" class="w-full h-auto">
+        </div>
+    </section>
+
+    <!-- Product Title & Description -->
+    <section class="container mx-auto px-4 py-6 max-w-4xl">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4 title-font">Rok Satin Premium</h1>
+        <p class="text-lg text-center text-gray-600 mb-8">Satin Skirt – Tampil Anggun dengan Sentuhan Mewah!</p>
+        
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+            <p class="text-gray-700 mb-4">Rok satin ini hadir dengan bahan lembut, ringan, dan berkilau alami yang memberi kesan elegan dan feminin. Potongan A-line yang flowy memberikan siluet ramping dan cocok untuk berbagai bentuk tubuh. Ideal dipadukan dengan blouse, kemeja, atau kaus untuk tampilan formal hingga kasual.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm">Bahan Premium</span>
+                <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm">Elegan & Mewah</span>
+                <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm">Nyaman Dipakai</span>
+                <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm">Cocok Semua Acara</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details & Advantages -->
+    <section class="container mx-auto px-4 py-12 max-w-4xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 title-font">Detail & Keunggulan Produk</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+                <div class="flex items-start mb-4">
+                    <div class="text-rose-500 mr-3 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Bahan Satin Premium</h3>
+                        <p class="text-gray-600">Halus, jatuh sempurna, dan berkilau alami untuk tampilan mewah.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start mb-4">
+                    <div class="text-rose-500 mr-3 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Model A-line / Flare</h3>
+                        <p class="text-gray-600">Memberikan siluet ramping yang cocok untuk semua bentuk tubuh.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="text-rose-500 mr-3 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Pinggang Karet</h3>
+                        <p class="text-gray-600">Nyaman dipakai dan fleksibel untuk berbagai ukuran.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+                <div class="flex items-start mb-4">
+                    <div class="text-rose-500 mr-3 mt-1"><i class="fas fa-star text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Multi Fungsi</h3>
+                        <p class="text-gray-600">Cocok untuk acara formal, pesta, kantor, atau daily look.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start mb-4">
+                    <div class="text-rose-500 mr-3 mt-1"><i class="fas fa-star text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Mudah Perawatan</h3>
+                        <p class="text-gray-600">Bahan berkualitas yang tahan lama dan mudah dicuci.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="text-rose-500 mr-3 mt-1"><i class="fas fa-star text-xl"></i></div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Detail Premium</h3>
+                        <p class="text-gray-600">Jahitan rapi dan finishing sempurna untuk tampilan high-end.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Images -->
+    <section class="container mx-auto px-4 py-12 max-w-6xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 title-font">Detail Produk</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 rounded-xl shadow-sm">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasl-m49p97visa4a85.webp" alt="Detail Rok Satin" class="w-full h-auto rounded-lg mb-4">
+                <p class="text-center text-gray-700">Potongan A-line yang flowy memberikan siluet ramping</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbkb-m9pkjdbozl6566.webp" alt="Detail Rok Satin" class="w-full h-auto rounded-lg mb-4">
+                <p class="text-center text-gray-700">Bahan satin premium dengan kilau alami yang elegan</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk0-m9qlsbrb75w287.webp" alt="Detail Rok Satin" class="w-full h-auto rounded-lg mb-4">
+                <p class="text-center text-gray-700">Pinggang karet yang nyaman dan fleksibel</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm">
+                <img src="https://assets.orderonline.id/compress/480/uploads/images_9798491737644048392.jpg" alt="Detail Rok Satin" class="w-full h-auto rounded-lg mb-4">
+                <p class="text-center text-gray-700">Cocok dipadukan dengan berbagai atasan untuk berbagai kesempatan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Variants -->
+    <section class="container mx-auto px-4 py-12 max-w-4xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 title-font">Varian Warna</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="color-option rounded-lg overflow-hidden cursor-pointer">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rase-m49p97viwiiicc.webp" alt="Rok Satin Warna Merah Muda" class="w-full h-auto">
+            </div>
+            
+            <div class="color-option rounded-lg overflow-hidden cursor-pointer">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk2-m9tfrpb32inha5.webp" alt="Rok Satin Warna Hitam" class="w-full h-auto">
+            </div>
+            
+            <div class="color-option active rounded-lg overflow-hidden cursor-pointer">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk2-m9tfsce3afwb42.webp" alt="Rok Satin Warna Merah Maroon" class="w-full h-auto">
+            </div>
+            
+            <div class="color-option rounded-lg overflow-hidden cursor-pointer">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasj-m49p97vj3jcqfa.webp" alt="Rok Satin Warna Krem" class="w-full h-auto">
+            </div>
+        </div>
+        
+        <p class="text-center text-gray-600 mt-6">Pilih warna favoritmu untuk tampilan yang lebih personal!</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 title-font">Kata Pelanggan</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-rose-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold mr-3">SD</div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Dewi</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Roknya sangat nyaman dipakai dan bahannya premium banget! Kilauannya bikin tampilan langsung mewah. Sudah beli 2 warna dan puas banget!"</p>
+                </div>
+                
+                <div class="testimonial-card bg-rose-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold mr-3">AM</div>
+                        <div>
+                            <h4 class="font-semibold">Anita Mulyana</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Pinggangnya fleksibel banget, cocok untuk yang ukuran tubuhnya fluktuatif seperti saya. Bahannya adem dan jatuhnya bagus. Worth it banget harganya!"</p>
+                </div>
+                
+                <div class="testimonial-card bg-rose-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-rose-200 flex items-center justify-center text-rose-600 font-bold mr-3">RD</div>
+                        <div>
+                            <h4 class="font-semibold">Rina Damayanti</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Paket sampai cepat dan packing rapi. Roknya persis seperti di foto, bahannya lembut dan jatuhnya elegan. Sudah dipakai ke kantor dan dapat banyak pujian!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Countdown -->
+    <section class="promo-banner py-8">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">PROMO SPESIAL HARI INI!</h3>
+                <p class="text-gray-700 mb-4">Diskon 50% hanya untuk 24 jam ke depan!</p>
+                
+                <div class="flex justify-center space-x-4 mb-6">
+                    <div class="countdown-box px-4 py-2 rounded-lg">
+                        <div class="text-2xl font-bold text-rose-700" id="hours">12</div>
+                        <div class="text-xs text-gray-600">Jam</div>
+                    </div>
+                    <div class="countdown-box px-4 py-2 rounded-lg">
+                        <div class="text-2xl font-bold text-rose-700" id="minutes">45</div>
+                        <div class="text-xs text-gray-600">Menit</div>
+                    </div>
+                    <div class="countdown-box px-4 py-2 rounded-lg">
+                        <div class="text-2xl font-bold text-rose-700" id="seconds">30</div>
+                        <div class="text-xs text-gray-600">Detik</div>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-gray-600">Harga akan kembali normal setelah countdown berakhir!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Notes -->
+    <section class="container mx-auto px-4 py-8 max-w-4xl">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+            <h3 class="font-semibold text-gray-800 mb-3 text-center">Informasi Penting</h3>
+            
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+                <div class="p-3 bg-rose-50 rounded-lg">
+                    <div class="text-rose-600 mb-1"><i class="fas fa-truck text-xl"></i></div>
+                    <p class="text-sm text-gray-700">Pengiriman 2 - 4 Hari Setelah Pemesanan</p>
+                </div>
+                
+                <div class="p-3 bg-rose-50 rounded-lg">
+                    <div class="text-rose-600 mb-1"><i class="fas fa-map-marker-alt text-xl"></i></div>
+                    <p class="text-sm text-gray-700">Mohon Isi Alamat Dengan Lengkap</p>
+                </div>
+                
+                <div class="p-3 bg-rose-50 rounded-lg">
+                    <div class="text-rose-600 mb-1"><i class="fas fa-certificate text-xl"></i></div>
+                    <p class="text-sm text-gray-700">100% Product Original</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price & Order Section -->
+    <section class="container mx-auto px-4 py-8 max-w-4xl">
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+            <!-- Promo Banner Image -->
+            <div class="relative">
+                <img src="https://assets.orderonline.id/compress/480/uploads/images_1205711737644052691.jpg" alt="Promo Diskon" class="w-full h-auto">
+                <div class="absolute bottom-4 left-4 bg-rose-600 text-white px-4 py-1 rounded-full font-bold">
+                    DISKON 50%
+                </div>
+            </div>
+            
+            <!-- Price Info -->
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <div>
+                        <p class="text-gray-600">Harga Normal:</p>
+                        <p class="text-xl font-bold text-gray-500 promo-price">Rp 350.000</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <p class="text-sm text-gray-600">Harga Promo:</p>
+                        <p class="text-3xl font-bold text-rose-600">Rp 175.000</p>
+                        <p class="text-sm text-green-600">Anda Hemat Rp 175.000</p>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                    <div class="flex">
+                        <div class="flex-shrink-0 text-yellow-500">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-yellow-700">
+                                <span class="font-semibold">Perhatian:</span> Promo hanya berlaku selama countdown berlangsung!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Form -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="rosa" data-product-slug="rok-satin-skirt" data-product-id="6818db0ddf6915b002030483" id="oo-embed-form-rok-satin-skirt-650" data-origin="orderonline">
+                        <div class="ooef-loader">
+                            <style>
+                                .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                            </style>
+                            <div aria-live="polite" role="status"><div>Loading...</div></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold text-rose-400 title-font mb-2">EleganceSkirt</div>
+                    <p class="text-gray-400">Tampil Anggun dengan Sentuhan Mewah</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Color Selection
+        const colorOptions = document.querySelectorAll('.color-option');
+        colorOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                colorOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // OrderOnline Embed Script
+        if (typeof xLogError != 'function') {
+            var xLogError = function (error) {
+                var req = new XMLHttpRequest();
+                var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                req.open('POST', 'https://api.orderonline.id/log', true);
+                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                req.send(params);
+            };
+        }
+        
+        try {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!w._ooe) w._ooe = n;
+                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://rosa.orderonline.id');
+            ooe('init', '5f17ee268dcbdb1b55498d78', '6818db0ddf6915b002030483', '6818db0ddf6915b002030484', 'oo-embed-form-rok-satin-skirt-650', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+            
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e);
+            throw e;
+        }
+    </script>
+</body>
+</html>
